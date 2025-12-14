@@ -25,11 +25,12 @@ export default defineConfig({
   fixedExtension: true,
   hooks: {
     'build:done': async () => {
+      const designDirectory = join(cwd(), 'src', 'meteocons', 'design')
       const iconsDirectory = join(cwd(), 'src', 'icons')
-      const fillAnimatedDirectory = join(cwd(), 'src', 'meteocons', 'design', 'fill', 'animation-ready')
-      const fillStaticDirectory = join(cwd(), 'src', 'meteocons', 'design', 'fill', 'export')
-      const lineAnimatedDirectory = join(cwd(), 'src', 'meteocons', 'design', 'line', 'animation-ready')
-      const lineStaticDirectory = join(cwd(), 'src', 'meteocons', 'design', 'line', 'export')
+      const fillAnimatedDirectory = join(designDirectory, 'fill', 'final')
+      const fillStaticDirectory = join(designDirectory, 'fill-static', 'final')
+      const lineAnimatedDirectory = join(designDirectory, 'line', 'final')
+      const lineStaticDirectory = join(designDirectory, 'line-static', 'final')
 
       const fillAnimatedFiles = await readdir(fillAnimatedDirectory)
       const lineAnimatedFiles = await readdir(lineAnimatedDirectory)
@@ -39,21 +40,21 @@ export default defineConfig({
       await rm(iconsDirectory, { recursive: true, force: true })
       await mkdir(iconsDirectory, { recursive: true })
 
-      const copyIcons = async (files: string[], style: 'fill' | 'line', variant: 'animated' | 'static', sourceDirectory: string) => {
+      const copyIcons = async (files: string[], styleSuffix: string, sourceDirectory: string) => {
         await Promise.all(
           files.filter(file => file.endsWith('.svg')).map(async (file) => {
             const originalName = file.replace(/\.svg$/u, '').replace(/^wi_/, '')
-            const targetName = `${originalName}-${style}-${variant}.svg`
+            const targetName = `${originalName}-${styleSuffix}.svg`
 
             await copyFile(join(sourceDirectory, file), join(iconsDirectory, targetName))
           }),
         )
       }
 
-      await copyIcons(fillAnimatedFiles, 'fill', 'animated', fillAnimatedDirectory)
-      await copyIcons(lineAnimatedFiles, 'line', 'animated', lineAnimatedDirectory)
-      await copyIcons(fillStaticFiles, 'fill', 'static', fillStaticDirectory)
-      await copyIcons(lineStaticFiles, 'line', 'static', lineStaticDirectory)
+      await copyIcons(fillAnimatedFiles, 'fill', fillAnimatedDirectory)
+      await copyIcons(lineAnimatedFiles, 'line', lineAnimatedDirectory)
+      await copyIcons(fillStaticFiles, 'fill-static', fillStaticDirectory)
+      await copyIcons(lineStaticFiles, 'line-static', lineStaticDirectory)
 
       const iconSetData = await importDirectory(join(cwd(), 'src', 'icons'), { prefix: 'meteocons', ignoreImportErrors: 'warn' })
       const iconJSONData = iconSetData.export()
@@ -75,9 +76,9 @@ export default defineConfig({
           spdx: 'MIT',
         },
         samples: [
-          'partly-cloudy-day-rain-fill-animated',
-          'wind-beaufort-4-fill-animated',
-          'thunderstorms-night-fill-animated',
+          'partly-cloudy-day-rain-fill',
+          'wind-beaufort-4-line',
+          'thunderstorms-night-fill-static',
         ],
         height: 20,
         displayHeight: 20,
