@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          submodules: true
+          submodules: recursive
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v6
         with:
@@ -35,7 +35,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          submodules: true
+          submodules: recursive
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v6
         with:
@@ -55,7 +55,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          submodules: true
+          submodules: recursive
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v6
         with:
