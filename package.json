@@ -1,0 +1,69 @@
+{
+  "name": "@proj-airi/iconify-meteocons",
+  "type": "module",
+  "version": "1.0.16",
+  "packageManager": "pnpm@10.25.0",
+  "description": "Iconify JSON IconSet port for Meteocons",
+  "author": {
+    "name": "Project AIRI Team",
+    "email": "airi@moeru.ai",
+    "url": "https://github.com/proj-airi"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/proj-airi/iconify-meteocons.git"
+  },
+  "homepage": "https://github.com/basmilius/weather-icons",
+  "exports": {
+    "./*": "./*",
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.mjs"
+    },
+    "./icons.json": "./dist/icons.json",
+    "./info.json": "./dist/info.json",
+    "./metadata.json": "./dist/metadata.json"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "README.md",
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "dev": "tsdown",
+    "stub": "tsdown",
+    "build": "tsdown",
+    "lint": "eslint --cache .",
+    "lint:fix": "eslint --cache --fix .",
+    "typecheck": "tsc --noEmit",
+    "sizecheck": "npx vite-bundle-visualizer",
+    "up": "taze -w -r -I -f && pnpm prune && pnpm dedupe",
+    "changelogithub": "changelogithub"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "@iconify/tools": "catalog:",
+    "@types/node": "catalog:",
+    "bumpp": "catalog:",
+    "changelogithub": "catalog:",
+    "eslint": "catalog:",
+    "lint-staged": "catalog:",
+    "local-pkg": "catalog:",
+    "simple-git-hooks": "catalog:",
+    "taze": "catalog:",
+    "tsdown": "catalog:",
+    "typescript": "catalog:",
+    "unplugin-unused": "catalog:"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

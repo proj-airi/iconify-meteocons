@@ -1,0 +1,3 @@
+[submodule "src/meteocons"]
+	path = src/meteocons
+	url = https://github.com/basmilius/weather-icons.git
