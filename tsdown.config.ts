@@ -26,10 +26,10 @@ export default defineConfig({
   hooks: {
     'build:done': async () => {
       const iconsDirectory = join(cwd(), 'src', 'icons')
-      const fillAnimatedDirectory = join(cwd(), 'src', 'meteocons', 'fill', 'animation-ready')
-      const fillStaticDirectory = join(cwd(), 'src', 'meteocons', 'fill', 'export')
-      const lineAnimatedDirectory = join(cwd(), 'src', 'meteocons', 'line', 'animation-ready')
-      const lineStaticDirectory = join(cwd(), 'src', 'meteocons', 'line', 'export')
+      const fillAnimatedDirectory = join(cwd(), 'src', 'meteocons', 'design', 'fill', 'animation-ready')
+      const fillStaticDirectory = join(cwd(), 'src', 'meteocons', 'design', 'fill', 'export')
+      const lineAnimatedDirectory = join(cwd(), 'src', 'meteocons', 'design', 'line', 'animation-ready')
+      const lineStaticDirectory = join(cwd(), 'src', 'meteocons', 'design', 'line', 'export')
 
       const fillAnimatedFiles = await readdir(fillAnimatedDirectory)
       const lineAnimatedFiles = await readdir(lineAnimatedDirectory)
