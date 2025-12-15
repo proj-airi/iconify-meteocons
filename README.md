@@ -1,15 +1,17 @@
 <a name="readme-top"></a>
 
-<div align="center">
+# [Meteocons](https://bas.dev/work/meteocons) ported into [Iconify](https://iconify.design/)
 
-<h1><a href="https://bas.dev/work/meteocons">Meteocons</a> ported into <a href="https://iconify.design/">Iconfiy</a></h1>
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![bundle][bundle-src]][bundle-href]
+[![JSDocs][jsdocs-src]][jsdocs-href]
+[![License][license-src]][license-href]
 
 Nice looking animated flatten design SVG icons and Icon Collection. See them all on one page at [lobehub.com/icons](https://lobehub.com/icons).<br/>
 Contributions, corrections & requests can be made on their [GitHub repository](https://github.com/basmilius/weather-icons).
 
 This enables you to use Meteocons in UnoCSS or any Iconify compatible scenario.
-
-</div>
 
 > [!NOTE]
 >
@@ -44,3 +46,20 @@ export default defineConfig({
   ],
 })
 ```
+
+Now you can use it with UnoCSS's `i-` syntax:
+
+```html
+<div class i-meteocons:overcast-day-haze-fill></div>
+```
+
+[npm-version-src]: https://img.shields.io/npm/v/@proj-airi/iconify-meteocons?style=flat&colorA=080f12&colorB=2a64be
+[npm-version-href]: https://npmjs.com/package/@proj-airi/iconify-meteocons
+[npm-downloads-src]: https://img.shields.io/npm/dm/@proj-airi/iconify-meteocons?style=flat&colorA=080f12&colorB=2a64be
+[npm-downloads-href]: https://npmjs.com/package/@proj-airi/iconify-meteocons
+[bundle-src]: https://img.shields.io/bundlephobia/minzip/@proj-airi/iconify-meteocons?style=flat&colorA=080f12&colorB=2a64be&label=minzip
+[bundle-href]: https://bundlephobia.com/result?p=@proj-airi/iconify-meteocons
+[license-src]: https://img.shields.io/github/license/proj-airi/iconify-meteocons.svg?style=flat&colorA=080f12&colorB=2a64be
+[license-href]: https://github.com/proj-airi/iconify-meteocons/blob/main/LICENSE
+[jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=2a64be
+[jsdocs-href]: https://www.jsdocs.io/package/@proj-airi/iconify-meteocons
