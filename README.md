@@ -15,7 +15,7 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
-Nice looking animated flatten design SVG icons and Icon Collection. See them all on one page at [lobehub.com/icons](https://lobehub.com/icons).<br/>
+Nice looking animated flatten design SVG icons and Icon Collection. See them all on one page at [Meteocons](https://bas.dev/work/meteocons).<br/>
 Contributions, corrections & requests can be made on their [GitHub repository](https://github.com/basmilius/weather-icons).
 
 This enables you to use Meteocons in UnoCSS or any Iconify compatible scenario.
