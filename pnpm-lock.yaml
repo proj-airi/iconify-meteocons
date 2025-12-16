@@ -52,6 +52,10 @@ catalogs:
 importers:
 
   .:
+    dependencies:
+      '@iconify/types':
+        specifier: 'catalog:'
+        version: 2.0.0
     devDependencies:
       '@antfu/eslint-config':
         specifier: 'catalog:'
@@ -59,9 +63,6 @@ importers:
       '@iconify/tools':
         specifier: 'catalog:'
         version: 5.0.0
-      '@iconify/types':
-        specifier: 'catalog:'
-        version: 2.0.0
       '@types/node':
         specifier: 'catalog:'
         version: 25.0.2

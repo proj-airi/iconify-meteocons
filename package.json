@@ -45,10 +45,12 @@
     "up": "taze -w -r -I -f && pnpm prune && pnpm dedupe",
     "changelogithub": "changelogithub"
   },
+  "dependencies": {
+    "@iconify/types": "catalog:"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:",
     "@iconify/tools": "catalog:",
-    "@iconify/types": "catalog:",
     "@types/node": "catalog:",
     "bumpp": "catalog:",
     "changelogithub": "catalog:",
