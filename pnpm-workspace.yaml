@@ -1,5 +1,4 @@
 catalogMode: prefer
-
 shellEmulator: true
 
 trustPolicy: no-downgrade
@@ -10,6 +9,7 @@ trustPolicyExclude:
 catalog:
   '@antfu/eslint-config': ^6.7.1
   '@iconify/tools': ^5.0.0
+  '@iconify/types': ^2.0.0
   '@types/node': ^25.0.2
   bumpp: ^10.3.2
   changelogithub: ^14.0.0

@@ -12,6 +12,9 @@ catalogs:
     '@iconify/tools':
       specifier: ^5.0.0
       version: 5.0.0
+    '@iconify/types':
+      specifier: ^2.0.0
+      version: 2.0.0
     '@types/node':
       specifier: ^25.0.2
       version: 25.0.2
@@ -56,6 +59,9 @@ importers:
       '@iconify/tools':
         specifier: 'catalog:'
         version: 5.0.0
+      '@iconify/types':
+        specifier: 'catalog:'
+        version: 2.0.0
       '@types/node':
         specifier: 'catalog:'
         version: 25.0.2

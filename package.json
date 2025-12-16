@@ -48,6 +48,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "catalog:",
     "@iconify/tools": "catalog:",
+    "@iconify/types": "catalog:",
     "@types/node": "catalog:",
     "bumpp": "catalog:",
     "changelogithub": "catalog:",
