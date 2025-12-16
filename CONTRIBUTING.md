@@ -97,7 +97,7 @@ Click on the **Fork** button on the top right corner of the [`proj-airi/iconify-
 ## Clone
 
 ```shell
-git clone https://github.com/<your-github-username>/lobe-icons.git
+git clone https://github.com/<your-github-username>/iconify-meteocons.git
 cd airi
 ```
 
