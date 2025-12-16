@@ -1,5 +1,12 @@
 <a name="readme-top"></a>
 
+<div>
+  <img width="64" height="64" src="https://raw.githubusercontent.com/proj-airi/iconify-meteocons/refs/heads/main/docs/examples/overcast-day-hail-fill.svg" />
+  <img width="64" height="64" src="https://raw.githubusercontent.com/proj-airi/iconify-meteocons/refs/heads/main/docs/examples/partly-cloudy-night-sleet-fill.svg" />
+  <img width="64" height="64" src="https://raw.githubusercontent.com/proj-airi/iconify-meteocons/refs/heads/main/docs/examples/thunderstorms-day-extreme-rain-line.svg" />
+  <img width="64" height="64" src="https://raw.githubusercontent.com/proj-airi/iconify-meteocons/refs/heads/main/docs/examples/uv-index-2-fill.svg" />
+</div>
+
 # [Meteocons](https://bas.dev/work/meteocons) ported into [Iconify](https://iconify.design/)
 
 [![npm version][npm-version-src]][npm-version-href]
