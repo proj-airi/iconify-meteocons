@@ -1,10 +1,10 @@
 <a name="readme-top"></a>
 
 <div>
-  <img width="64" height="64" src="https://raw.githubusercontent.com/proj-airi/iconify-meteocons/refs/heads/main/docs/examples/overcast-day-hail-fill.svg" />
-  <img width="64" height="64" src="https://raw.githubusercontent.com/proj-airi/iconify-meteocons/refs/heads/main/docs/examples/partly-cloudy-night-sleet-fill.svg" />
-  <img width="64" height="64" src="https://raw.githubusercontent.com/proj-airi/iconify-meteocons/refs/heads/main/docs/examples/thunderstorms-day-extreme-rain-line.svg" />
-  <img width="64" height="64" src="https://raw.githubusercontent.com/proj-airi/iconify-meteocons/refs/heads/main/docs/examples/uv-index-2-fill.svg" />
+  <img width="64" height="64" src="https://raw.githubusercontent.com/proj-airi/iconify-meteocons/refs/heads/main/docs/examples/overcast-day-hail-fill.svg" alt="Icon for overcast-day-hail-fill" />
+  <img width="64" height="64" src="https://raw.githubusercontent.com/proj-airi/iconify-meteocons/refs/heads/main/docs/examples/partly-cloudy-night-sleet-fill.svg" alt="Icon for partly-cloudy-night-sleet-fill" />
+  <img width="64" height="64" src="https://raw.githubusercontent.com/proj-airi/iconify-meteocons/refs/heads/main/docs/examples/thunderstorms-day-extreme-rain-line.svg" alt="Icon for thunderstorms-day-extreme-rain-line" />
+  <img width="64" height="64" src="https://raw.githubusercontent.com/proj-airi/iconify-meteocons/refs/heads/main/docs/examples/uv-index-2-fill.svg" alt="Icon for uv-index-2-fill" />
 </div>
 
 # [Meteocons](https://bas.dev/work/meteocons) ported into [Iconify](https://iconify.design/)
